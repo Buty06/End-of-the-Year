@@ -1,7 +1,7 @@
-import { Fireworks } from "fireworks-js";
+// import { Fireworks } from "fireworks-js";
 
-const container = document.querySelector(".container");
-const fireworks = new Fireworks(container, {
-  /* options */
-});
-fireworks.start();
+// const container = document.querySelector(".fireworks");
+// const fireworks = new Fireworks(container, {
+//     gravity: 9.5,
+// });
+// fireworks.start();
