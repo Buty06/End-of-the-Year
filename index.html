@@ -24,7 +24,9 @@
     <title>End of the Year</title>
   </head>
   <body>
-    <div class="fireworks"></div>
+    <div class="fireworks">
+      <article class="counter">00:00:00</article>
+    </div>
 
     <!-- jsDelivr  -->
     <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
@@ -33,6 +35,7 @@
     <script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
 
     <!-- Usage -->
+    <!-- La configuracion de la libreria -->
     <script>
       const container = document.querySelector(".fireworks");
       const fireworks = new Fireworks.default(container, {
@@ -45,7 +48,11 @@
         },
         sound: {
           enabled: true,
-          files: ['assets/explosion0.mp3', 'assets/explosion1.mp3', 'assets/explosion2.mp3'],
+          files: [
+            "assets/explosion0.mp3",
+            "assets/explosion1.mp3",
+            "assets/explosion2.mp3",
+          ],
           volume: { min: 4, max: 8 },
         },
       });
