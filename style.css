@@ -12,3 +12,14 @@ html{
     visibility: visible;
     opacity: 1;
 }
+
+body{
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.fireworks{
+    background-color: #222;
+    width: 100%;
+    height: 100%;
+}
