@@ -31,13 +31,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 16rem;
-  height: 10rem;
+  width: 19rem;
+  height: 8rem;
   background-color: rgba(88, 88, 87, 0.616);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   color: #ffe;
-  font-size: 50px;
+  font-size: 40px;
   border-radius: 20px;
+  padding: 1rem;
 }
