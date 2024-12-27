@@ -36,36 +36,9 @@
       </article>
     </div>
 
-    <!-- jsDelivr  -->
+    <!-- jsDelivr  (La libreria de los fireworks)-->
     <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
-
-    <!-- UNPKG -->
-    <script src="https://unpkg.com/fireworks-js@2.x/dist/index.umd.js"></script>
-
-    <!-- Usage -->
-    <!-- La configuracion de la libreria -->
-    <script>
-      const container = document.querySelector(".fireworks");
-      const fireworks = new Fireworks.default(container, {
-        particles: 80,
-        explosion: 10,
-        intensity: 60,
-        mouse: {
-          click: true,
-          max: 1,
-        },
-        sound: {
-          enabled: true,
-          files: [
-            "assets/explosion0.mp3",
-            "assets/explosion1.mp3",
-            "assets/explosion2.mp3",
-          ],
-          volume: { min: 4, max: 8 },
-        },
-      });
-      fireworks.start();
-    </script>
+    <script src="./fireworks.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
