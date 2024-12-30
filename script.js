@@ -8,7 +8,7 @@ const seconds = document.getElementById("seconds");
 const sound = new Howl({
   src: ["assets/musica.mp3"],
 });
-const musicDate = new Date(2024, 11, 30, 15, 0, 0, 0);
+const musicDate = new Date(2024, 11, 30, 15, 9, 56, 0);
 let validator;
 
 //?Nueva y mejor forma con requestAnimatonFrame
