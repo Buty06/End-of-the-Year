@@ -9,7 +9,7 @@ const musicButton = document.getElementById('button2');
 const sound = new Howl({
   src: ["assets/musica.mp3"],
 });
-const musicDate = new Date(2024, 11, 30, 15, 9, 56, 0);
+const musicDate = new Date(2024, 11, 30, 16, 54, 0, 0);
 let validator;
 let validatorStop = true;
 
