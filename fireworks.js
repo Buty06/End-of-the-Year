@@ -2,6 +2,7 @@ const container = document.querySelector(".fireworks");
 const fireworksButton = document.getElementById("button1");
 let validation = true;
 
+//?Logica de la libreria y configuracion de los fuegos
 const fireworks = new Fireworks.default(container, {
   particles: 80,
   explosion: 10,
@@ -21,14 +22,15 @@ const fireworks = new Fireworks.default(container, {
   },
 });
 
+//?Ejecucion de la funcion/libreria
 fireworks.start()
 
+//?Logica para el boton de FIREWORKS
 fireworksButton.addEventListener("click", () => {
   if (validation) {
     fireworks.stop();
-    validation = false;
   } else {
     fireworks.start();
-    validation = true;
   }
+  validation = !validation
 });
