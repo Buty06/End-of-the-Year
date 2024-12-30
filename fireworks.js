@@ -1,4 +1,7 @@
 const container = document.querySelector(".fireworks");
+const fireworksButton = document.getElementById("button1");
+let validation = true;
+
 const fireworks = new Fireworks.default(container, {
   particles: 80,
   explosion: 10,
@@ -17,4 +20,15 @@ const fireworks = new Fireworks.default(container, {
     volume: { min: 4, max: 8 },
   },
 });
-fireworks.start();
+
+fireworks.start()
+
+fireworksButton.addEventListener("click", () => {
+  if (validation) {
+    fireworks.stop();
+    validation = false;
+  } else {
+    fireworks.start();
+    validation = true;
+  }
+});

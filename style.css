@@ -42,3 +42,40 @@ body {
   border-radius: 20px;
   padding: 1rem;
 }
+
+.button_container{
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 23rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button{
+  background-color: rgba(88, 88, 87, 0.616);
+  font-size: 24px;
+  padding: 1rem;
+  color: #ffe;
+  font-weight: 700;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  transition: .3s ease;
+
+  &:hover{
+    background-color: rgba(53, 53, 53, 0.616);
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 24;
+  margin-left: .5rem;
+}
