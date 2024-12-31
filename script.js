@@ -66,11 +66,11 @@ let validatorStop = getState('musicOn', true);
 
 musicButton.addEventListener("click", () => {
   if (validatorStop) {
-    sound.play();
-    setState('musicOn', true)
-  } else {
     sound.pause();
     setState('musicOn', false)
+  } else {
+    sound.play();
+    setState('musicOn', true)
   }
   validatorStop = !validatorStop;
 });
