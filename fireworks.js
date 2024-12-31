@@ -27,8 +27,6 @@ let validation = getState("fireworksOn", true);
 //? basandonos en el valor devuelto de localStorage
 if (validation) {
   fireworks.start();
-} else {
-  fireworks.stop();
 }
 
 //?Logica para el boton de FIREWORKS

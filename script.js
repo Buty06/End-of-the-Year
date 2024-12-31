@@ -9,7 +9,7 @@ const musicButton = document.getElementById("button2");
 const sound = new Howl({
   src: ["assets/musica.mp3"],
 });
-const musicDate = new Date(2024, 11, 30, 17, 36, 58, 0);
+const musicDate = new Date(2024, 11, 31, 23, 58, 58, 0);
 let validator;
 
 //? Logica para renderizar los elementos con requestAnimatonFrame
@@ -34,7 +34,6 @@ const updateTime = () => {
 
   //? Logica para el inicio de la musica programada
   if (actualDate > musicDate && validator !== false) {
-    1;
     validator = true;
 
     if (validator) {
