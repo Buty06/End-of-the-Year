@@ -1,6 +1,5 @@
 const container = document.querySelector(".fireworks");
 const fireworksButton = document.getElementById("button1");
-let validation = true;
 
 //?Logica de la libreria y configuracion de los fuegos
 const fireworks = new Fireworks.default(container, {
@@ -22,15 +21,26 @@ const fireworks = new Fireworks.default(container, {
   },
 });
 
+let validation = getState("fireworksOn", true);
+
 //?Ejecucion de la funcion/libreria
-fireworks.start()
+//? basandonos en el valor devuelto de localStorage
+if (validation) {
+  fireworks.start();
+} else {
+  fireworks.stop();
+}
 
 //?Logica para el boton de FIREWORKS
 fireworksButton.addEventListener("click", () => {
   if (validation) {
     fireworks.stop();
+    //? Cambiamos el estado en localStorage
+    setState("fireworksOn", false);
   } else {
     fireworks.start();
+    //? Cambiamos el estado en localStorage
+    setState("fireworksOn", true);
   }
-  validation = !validation
+  validation = !validation;
 });
