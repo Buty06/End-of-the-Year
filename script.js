@@ -62,13 +62,15 @@ updateTime();
 // })
 
 //*New Style
-let validatorStop = true;
+let validatorStop = getState('musicOn', true);
 
 musicButton.addEventListener("click", () => {
   if (validatorStop) {
-    sound.pause();
-  } else {
     sound.play();
+    setState('musicOn', true)
+  } else {
+    sound.pause();
+    setState('musicOn', false)
   }
   validatorStop = !validatorStop;
 });
