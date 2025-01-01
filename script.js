@@ -9,12 +9,12 @@ const musicButton = document.getElementById("button2");
 const sound = new Howl({
   src: ["assets/musica.mp3"],
 });
-const musicDate = new Date(2024, 11, 31, 23, 58, 58, 0);
+const musicDate = new Date(2025, 11, 31, 23, 58, 58, 0);
 let validator;
 
 //? Logica para renderizar los elementos con requestAnimatonFrame
 const updateTime = () => {
-  const lastDate = new Date(2025, 0, 1);
+  const lastDate = new Date(2026, 0, 1);
   const actualDate = new Date();
   const diferencia = lastDate - actualDate;
 
